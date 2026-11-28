@@ -592,20 +592,14 @@ export default function ChatWorkspace({
           mobileShowChat ? 'hidden md:flex' : 'flex'
         }`}
       >
-        {/* Header Akun & Brand */}
+                {/* Header Akun & Brand */}
         <div className="h-16 px-4 border-b border-[#1F293B] flex items-center justify-between gap-2 shrink-0">
-          <div className="flex items-center gap-2.5 min-w-0">
+          <div className="flex items-center min-w-0">
             <img
               src="/logo.png"
               alt={SITE_CONFIG.name}
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-              }}
-              className="w-7 h-7 rounded-lg object-contain shrink-0"
+              className="h-8 sm:h-9 w-auto max-w-[155px] sm:max-w-[185px] object-contain shrink-0"
             />
-            <span className="text-base font-semibold tracking-tight text-[#F8FAFC] truncate">
-              {SITE_CONFIG.name}
-            </span>
           </div>
 
           <div className="flex items-center gap-1.5 shrink-0">
