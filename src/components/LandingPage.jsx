@@ -316,9 +316,13 @@ export default function LandingPage({ onOpenAuth, blockedNotice }) {
         </section>
       </main>
 
-      <footer className="border-t border-[#1F293B] py-8 mt-10">
+            <footer className="border-t border-[#1F293B] py-8 mt-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-[#64748B]">
-          <span className="font-medium text-[#94A3B8]">{SITE_CONFIG.name}</span>
+          <img
+            src="/logo.png"
+            alt={SITE_CONFIG.name}
+            className="h-7 w-auto max-w-[150px] object-contain"
+          />
           <a
             href={SITE_CONFIG.ownerTelegramUrl}
             target="_blank"
