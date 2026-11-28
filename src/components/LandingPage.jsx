@@ -91,21 +91,15 @@ export default function LandingPage({ onOpenAuth, blockedNotice }) {
 
   return (
     <div ref={rootRef} className="min-h-screen bg-[#090D16] text-[#F8FAFC]">
-      {/* Navigasi Atas */}
+            {/* Navigasi Atas */}
       <header className="sticky top-0 z-30 bg-[#090D16]/90 backdrop-blur-md border-b border-[#1F293B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2.5 min-w-0">
+          <div className="flex items-center min-w-0">
             <img
               src="/logo.png"
               alt={SITE_CONFIG.name}
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-              }}
-              className="w-8 h-8 rounded-lg object-contain shrink-0"
+              className="h-9 sm:h-10 w-auto max-w-[170px] sm:max-w-[200px] object-contain shrink-0"
             />
-            <span className="text-lg font-semibold tracking-tight text-[#F8FAFC] truncate">
-              {SITE_CONFIG.name}
-            </span>
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
